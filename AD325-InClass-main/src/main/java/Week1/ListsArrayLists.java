@@ -14,7 +14,6 @@ public class ListsArrayLists {
 
         // Typed form of list
         ArrayList<String> shapes = new ArrayList<>();
-        shapes.add("circle");
 
         System.out.println(colors);
         System.out.println(shapes);
