@@ -1,11 +1,9 @@
 package Week1.Interfaces;
 
 /**
-   A driver that demonstrates the class Circle.
+   An updated driver that demonstrates the class Circle.
    
-   @author Frank M. Carrano
-   @author Timothy M. Henry
-   @version 4.0
+   @author Psy Cisneros
 */
 public class Main
 {
