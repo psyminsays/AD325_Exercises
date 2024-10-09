@@ -1,15 +1,17 @@
 package Week4.MoreGenerics;
 
+import static Week4.MoreGenerics.Main.Color.*;
+
 public class Main {
 
     enum Color {RED, GREEN, BLUE, YELLOW}
     public static void main(String[] args) {
 
 
-        Color c = Color.GREEN;
-        System.out.println(c.compareTo(c.BLUE));
-        System.out.println(c.compareTo(c.RED));
-        System.out.println(c.compareTo(c.GREEN));
+        Color c = GREEN;
+        System.out.println(c.compareTo(BLUE));
+        System.out.println(c.compareTo(RED));
+        System.out.println(GREEN.compareTo(c));
 
 
         Circle c1 = new Circle(5.0);
@@ -37,7 +39,7 @@ public class Main {
         System.out.println("\nDone.");
 
         Square<Integer> intSquare = new Square<>(5);
-        //Square<String> stringSquare = new Square<>("23");
+        Square<String> stringSquare = new Square<String>("23");
 
 
     }
