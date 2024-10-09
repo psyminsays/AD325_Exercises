@@ -10,7 +10,8 @@ class CupTest {
 
     @org.junit.jupiter.api.Test
     void getLiquidType() {
-        assertEquals("Water", cup.getLiquidType());
+        assertEquals("Water",
+                cup.getLiquidType());
     }
 
     @org.junit.jupiter.api.Test
