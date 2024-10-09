@@ -1,6 +1,8 @@
+package main;
+
 public class Main {
     public static void main(String[] args) {
-        // Create a new Cup instance
+        // Create a new main.Cup instance
         Cup myCup = new Cup("Water", 75.0);
 
         // Display initial state
