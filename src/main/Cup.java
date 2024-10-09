@@ -1,3 +1,5 @@
+package main;
+
 public class Cup {
     private String liquidType;
     private double percentFull;

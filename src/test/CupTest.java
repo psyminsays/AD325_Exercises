@@ -1,3 +1,5 @@
+import main.Cup;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CupTest {
@@ -10,8 +12,7 @@ class CupTest {
 
     @org.junit.jupiter.api.Test
     void getLiquidType() {
-        assertEquals("Water",
-                cup.getLiquidType());
+        assertEquals("Water", cup.getLiquidType());
     }
 
     @org.junit.jupiter.api.Test
@@ -42,5 +43,30 @@ class CupTest {
     void setPercentFullAboveHundred() {
         cup.setPercentFull(110.0);
         assertEquals(110.0, cup.getPercentFull());
+    }
+
+    // New tests
+    @org.junit.jupiter.api.Test
+    void setLiquidTypeToEmptyString() {
+        cup.setLiquidType("");
+        assertEquals("", cup.getLiquidType());
+    }
+
+    @org.junit.jupiter.api.Test
+    void setLiquidTypeToNull() {
+        cup.setLiquidType(null);
+        assertNull(cup.getLiquidType());
+    }
+
+    @org.junit.jupiter.api.Test
+    void setPercentFullToZero() {
+        cup.setPercentFull(0.0);
+        assertEquals(0.0, cup.getPercentFull());
+    }
+
+    @org.junit.jupiter.api.Test
+    void setPercentFullToHundred() {
+        cup.setPercentFull(100.0);
+        assertEquals(100.0, cup.getPercentFull());
     }
 }
